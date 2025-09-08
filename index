@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>English AI Database</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+<style>body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}</style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+<!-- NAV -->
+<nav class="bg-white/80 backdrop-blur sticky top-0 z-40 shadow-sm">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="rounded-md" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#0EA5A4"/><path d="M7 14L10 10L14 15L17 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="font-semibold text-lg text-slate-900">English AI Database</span>
+    </a>
+    <div class="hidden md:flex items-center gap-6 text-slate-700">
+      <a href="index.html" class="hover:text-sky-600">Home</a>
+      <a href="guidelines.html" class="hover:text-sky-600">AI Usage Guidelines</a>
+      <div class="relative group">
+        <a href="skills.html" class="hover:text-sky-600">Skills</a>
+        <div class="absolute right-0 mt-2 w-44 p-3 bg-white rounded-md shadow-md hidden group-hover:block">
+          <a href="freshmen.html" class="block py-1 text-sm hover:text-sky-600">Freshmen</a>
+          <a href="sophomores.html" class="block py-1 text-sm hover:text-sky-600">Sophomores</a>
+          <a href="juniors.html" class="block py-1 text-sm hover:text-sky-600">Juniors</a>
+          <a href="seniors.html" class="block py-1 text-sm hover:text-sky-600">Seniors</a>
+          <a href="resume.html" class="block py-1 text-sm hover:text-sky-600">Resume Writing</a>
+        </div>
+      </div>
+      <a href="resume.html" class="hover:text-sky-600">Resume Writing</a>
+    </div>
+    <div class="md:hidden">
+      <button id="menuBtn" aria-label="menu" class="p-2 rounded-md bg-slate-100">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7H20M4 12H20M4 17H20" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div id="mobileNav" class="md:hidden hidden bg-white/95 shadow-sm">
+  <div class="px-6 py-4 space-y-2">
+    <a href="index.html" class="block">Home</a>
+    <a href="guidelines.html" class="block">AI Usage Guidelines</a>
+    <a href="freshmen.html" class="block">Freshmen</a>
+    <a href="sophomores.html" class="block">Sophomores</a>
+    <a href="juniors.html" class="block">Juniors</a>
+    <a href="seniors.html" class="block">Seniors</a>
+    <a href="resume.html" class="block">Resume Writing</a>
+  </div>
+</div>
+<script>
+const menuBtn = document.getElementById('menuBtn');
+menuBtn?.addEventListener('click', () => {
+  const nav = document.getElementById('mobileNav');
+  if (nav) nav.classList.toggle('hidden');
+});
+</script>
+
+<main class="max-w-6xl mx-auto px-6 py-16">
+  <header class="grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900">Welcome to <span class="text-sky-600">The English AI Database</span></h1>
+      <p class="mt-4 text-lg text-slate-700">Helping students learn with AI while maintaining academic integrity and strong learning habits.</p>
+      <div class="mt-6 flex gap-3">
+        <a href="skills.html" class="inline-block px-5 py-3 bg-sky-600 text-white rounded-lg shadow hover:opacity-95">Explore Skills</a>
+        <a href="guidelines.html" class="inline-block px-5 py-3 border border-sky-600 text-sky-600 rounded-lg hover:bg-sky-50">Read Guidelines</a>
+      </div>
+    </div>
+    <div>
+      <div class="rounded-xl bg-gradient-to-br from-white to-slate-100 p-6 shadow">
+        <h3 class="text-xl font-semibold">What is The English AI Database?</h3>
+        <p class="mt-3 text-slate-700">The English AI Database is a webpage where students can use AI as a supplement to their learning. For each grade level, there are multiple AI's recommended for use as well as the guidelines for proper usage. Teachers will be able to guide students in an educative way on the incorporation of AI into school lives as well as establish an environment consistent with the growing change and cultivation of AI. Students can now access different AI's and explore different parts of their curriculum in which they would need to use that certain AI for, while maintaining academic integrity.</p>
+        <hr class="my-4"/>
+        <h4 class="font-semibold">How can I use The English AI Database?</h4>
+        <ol class="list-decimal list-inside mt-2 text-slate-700 space-y-1">
+          <li>Click on the "Skills" page on the top right corner</li>
+          <li>Choose the grade level you are currently in</li>
+          <li>If you are looking to write a resume, click on "Resume Writing"</li>
+          <li>For each Grade there are multiple sub pages which you can use to guide yourself (Curriculum page, Recommended AI's, Disclaimer, and When Can You Use AI.)</li>
+          <li>Refer back to the AI Usage Guidelines page to know in what ways you can use AI to supplement your learning</li>
+        </ol>
+        <div class="mt-4 p-4 bg-sky-50 rounded">
+          <h5 class="font-semibold">Purpose Statement</h5>
+          <p class="mt-2 text-slate-700">The purpose of this database is for students to be able to supplement their learning using AI while maintaining their academic integrity and learning consistently. As AI is incredibly new and popular, learning standards need to accommodate to fit the new change, therefore this database aims to facilitate this transition between traditional learning and new learning.</p>
+          <p class="mt-2 text-xs text-slate-600">This database is to be used by Edison Township School District students at their English teacher's discretion. Any and all misuse is prohibited.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="mt-12 grid md:grid-cols-3 gap-6">
+    <a href="guidelines.html" class="block p-6 bg-white rounded-lg shadow hover:shadow-md">
+      <h3 class="font-semibold text-lg">AI Usage Guidelines</h3>
+      <p class="mt-2 text-sm text-slate-600">Acceptable usage, consequences, permitted tools, and when AI is appropriate.</p>
+    </a>
+    <a href="skills.html" class="block p-6 bg-white rounded-lg shadow hover:shadow-md">
+      <h3 class="font-semibold text-lg">Skills (Grade Levels)</h3>
+      <p class="mt-2 text-sm text-slate-600">Freshmen, Sophomores, Juniors, Seniors — curriculum, recommended AIs, and use cases.</p>
+    </a>
+    <a href="resume.html" class="block p-6 bg-white rounded-lg shadow hover:shadow-md">
+      <h3 class="font-semibold text-lg">Resume Writing</h3>
+      <p class="mt-2 text-sm text-slate-600">AI tools and practical advice for building a strong resume.</p>
+    </a>
+  </section>
+</main>
+
+<footer class="mt-16 bg-slate-50 border-t">
+  <div class="max-w-6xl mx-auto px-6 py-10 text-sm text-slate-600">
+    <div class="flex flex-col md:flex-row justify-between">
+      <div>
+        <strong class="text-slate-900">English AI Database</strong><br/>
+        For Edison Township School District students at teacher discretion. Any misuse is prohibited.
+      </div>
+      <div class="mt-4 md:mt-0">
+        <a href="https://sites.google.com/edison.k12.nj.us/english-ai-database?usp=sharing" target="_blank" class="underline">Original Google Site</a>
+      </div>
+    </div>
+    <p class="mt-6">Built for classroom-friendly AI guidance · Generated by request</p>
+  </div>
+</footer>
+</body>
+</html>
